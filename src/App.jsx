@@ -10,14 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route
-          path="/movie/:id"
-          element={
-            <div className="container mx-auto px-2">
-              <MovieDetail />
-            </div>
-          }
-        />
+        <Route path="/movie/:id" element={<MovieDetail />} />
       </Routes>
     </Router>
   );

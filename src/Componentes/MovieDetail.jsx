@@ -87,7 +87,7 @@ const MovieDetail = () => {
   }
 
   return (
-    <div className="min-h-screen">
+    <div className="w-full min-h-screen bg-black">
       {/* Hero Section with Backdrop */}
       <div className="relative h-[50vh] md:h-[70vh] w-full">
         <div className="absolute inset-0 bg-black/60 z-10" />
@@ -120,8 +120,8 @@ const MovieDetail = () => {
       </div>
 
       {/* Content Section */}
-      <div className="relative z-30 -mt-20 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="bg-[#060d1e]/95 rounded-lg shadow-2xl p-6 md:p-8">
+      <div className="relative z-30 -mt-20 w-full px-0 md:px-0 bg-black">
+        <div className="bg-[#060d1e]/95 rounded-lg shadow-2xl p-6 md:p-8 w-full">
           <div className="flex flex-col md:flex-row gap-8">
             {/* Poster */}
             <div className="w-full md:w-1/3 lg:w-1/4">
@@ -238,11 +238,6 @@ const MovieDetail = () => {
               </div>
             </div>
           )}
-
-          {/* Credits Section */}
-          <div className="mt-8">
-            <Credits movieId={id} />
-          </div>
         </div>
       </div>
     </div>
